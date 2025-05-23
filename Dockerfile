@@ -12,7 +12,7 @@ RUN go mod download
 COPY . .
 
 # Build the Go app
-RUN go build -o main .
+RUN go build -o main ./cmd
 
 # Use a minimal base image to run the app
 FROM debian:bookworm-slim
